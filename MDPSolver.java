@@ -72,7 +72,7 @@ public class MDPSolver {
             int int_state = GraphDefinedDomain.getNodeId(state);
             //int int_action = (int)action;//GraphDefinedDomain.getActionId(action);
             int int_state_final = GraphDefinedDomain.getNodeId(state_final);
-
+            //Here it should go the conversion from GroundedAction to int, but I couldnt find the correct method to do the conversion.
             double value_higher_reward = 0;
             for(int ii = 0; ii < (this.probabilitiesOfTransitions_temp)[int_state].length; ii++){
                 
